@@ -1,0 +1,34 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Serveur",
+            "request": "launch",
+            "mainClass": "Serveur",
+            "projectName": "fr.tp.inf112.projects.robotsim"
+        },
+        {
+            "type": "java",
+            "name": "Run TestRobotSimSerializationJSON",
+            "request": "launch",
+            "mainClass": "fr.tp.inf112.projects.robotsim.TestRobotSimSerializationJSON",
+            "projectName": "fr.tp.inf112.projects.robotsim"
+        },
+        {
+            "type": "java",
+            "name": "Serveur",
+            "request": "launch",
+            "mainClass": "fr.tp.inf112.projects.robotsim.server.Serveur",
+            "projectName": "fr.tp.inf112.projects.robotsim"
+        },
+        {
+            "type": "java",
+            "name": "Run SimulatorApplication",
+            "request": "launch",
+            "mainClass": "fr.tp.inf112.projects.robotsim.app.SimulatorApplication",
+            "projectName": "fr.tp.inf112.projects.robotsim",
+            "vmArgs": "-Djava.util.logging.config.file=config/logging.properties"
+        }
+    ]
+}
