@@ -1,12 +1,14 @@
 # Robotic Factory - Simulateur Distribué & Événementiel (SLR)
 
-Projet de simulation d'usine robotisée distribuée développé dans le cadre des TPs SLR (Télécom Paris).
+Projet de simulation d'usine robotisée distribuée développé dans le cadre des de la spé SLR.
 
 Le projet met en œuvre une architecture **microservices** et **orientée événements (Event-Driven)** combinant **Spring Boot**, **Apache Kafka** et une interface graphique **Java Swing**.
 
+Ce projet a été développé avec l'aide de l'IDE **Visual Studio Code** et non sur **Eclipse**.
+
 ---
 
-## 🏗️ Architecture et Fonctionnement
+## Architecture et Fonctionnement
 
 Le système repose sur un découplage complet entre le moteur de calcul de la simulation et l'interface utilisateur :
 
@@ -46,7 +48,7 @@ Le système repose sur un découplage complet entre le moteur de calcul de la si
 
 ---
 
-## 📋 Prérequis
+##  Prérequis
 
 * **Java 17** ou supérieur
 * **Apache Kafka** (ex: version `3.8.1` téléchargée localement)
@@ -54,7 +56,7 @@ Le système repose sur un découplage complet entre le moteur de calcul de la si
 
 ---
 
-## 🚀 Comment lancer le projet (Guide pas à pas)
+## Comment lancer le projet (Guide pas à pas)
 
 Le démarrage s'effectue en **4 étapes simples** :
 
@@ -113,21 +115,9 @@ Dans le menu de la fenêtre graphique :
 2. Les robots commencent à se déplacer en temps réel en naviguant entre les machines grâce aux événements Kafka !
 3. Pour stopper : cliquez sur **Simulation** > **Stop**.
 
----
+--
 
-## 🧪 Tests Unitaires
-
-Pour vérifier la conformité de la sérialisation / désérialisation polymorphique Jackson :
-
-```bash
-./mvnw test
-```
-
-Ou lancez la configuration **`Run TestRobotSimSerializationJSON`** depuis VS Code.
-
----
-
-## 📁 Structure Principale des Fichiers
+## Structure Principale des Fichiers
 
 * **`src/fr/tp/inf112/projects/robotsim/model/`** :
   * Modèle de domaine : `Factory`, `Robot`, `Room`, `Machine`, `Conveyor`, `PositionedShape`...
